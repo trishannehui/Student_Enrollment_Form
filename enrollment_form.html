@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(112, 68, 122);
+        }
+        h1 {
+            color: #0a0a0a;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #0a0a0a;
+        }
+        form {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 50%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #ba4be6;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #91398c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+
+    <form action="action_page.php" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <label>Sex:</label>
+        <label><input type="radio" name="sex" value="Male" required> Male</label>
+        <label><input type="radio" name="sex" value="Female"> Female</label>
+
+        <label for="course">Course Options:</label>
+        <select id="course" name="course" required>
+            <option value="BSIT">BSIT</option>
+            <option value="BSSW">BSSW</option>
+            <option value="BSPA">BSPA</option>
+        </select>
+
+        <label>Interests:</label>
+        <label><input type="checkbox" name="interests" value="Web Development"> Web Development</label>
+        <label><input type="checkbox" name="interests" value="Data Science"> Data Science</label>
+        <label><input type="checkbox" name="interests" value="Networking"> Networking</label>
+        <label><input type="checkbox" name="interests" value="Graphic Design"> Graphic Design</label>
+
+        <button type="submit">Enroll Now</button>
+    </form>
+
+    <h3>Enrolled Students</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Trish-Anne Huidem</td>
+                <td>huidemt@gmail.com</td>
+                <td>19</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Elysalyn Barlan</td>
+                <td>ely@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Maricel Maribojoc</td>
+                <td>mari@gmail.com</td>
+                <td>21</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Margarette Felonia</td>
+                <td>marga@gmail.com</td>
+                <td>19</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Louiezzy Ramos</td>
+                <td>louie@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Junnalyn Merillo</td>
+                <td>junna@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Kyla Caliwan</td>
+                <td>kyla@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+
+
+</html>
